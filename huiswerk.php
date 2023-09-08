@@ -124,7 +124,47 @@ echo "<br>";
 
 //opdracht: 7
 
+$priceIphone = 1000;
+$spaargeld = 1004;
 
+
+if ($spaargeld < 750) {
+
+    $restGeld1 = $priceIphone - $spaargeld;
+
+    echo "Je kunt beter een baantje zoeken. je mist nog $restGeld1 euro";
+}
+else if ($spaargeld >= 750 && $spaargeld < 1000) {
+
+    $restGeld2 = $priceIphone - $spaargeld;
+
+    echo "je bent er bijna, maar je mist nog $restGeld2 euro";
+}
+else {
+
+    $restGeld3 = $spaargeld - $priceIphone;
+
+    echo "u hebt een voldoende bedrag om de aankopen te maken. u zult na de aankopen nog over hebben: $restGeld3 euro";
+}
+
+echo "<br>";
+
+//opdracht: 8
+
+$voteAge = 18;
+$votePass = false;
+$licenceAge = 16;
+$age8 = 17;
+
+if ($age8 >= $licenceAge && $age8 >= $voteAge && $votePass = true) {
+    echo "je mag examen doen voor de scooter rijbewijs en je mag stemmen";
+}
+elseif ($age8 >= $licenceAge && $age8 >= $voteAge && $votePass = false) {
+    echo "Je kunt wel voor je scooter rijbewijs gaan maar je mist nog een stem pas.";
+}
+else if ($age8 < $licenceAge && $age8 < $voteAge) {
+    echo "Je bent te jong om voor je scooterrijbewijs te gaan en om te stemmen";
+}
 
 
 
