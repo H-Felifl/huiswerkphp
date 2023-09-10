@@ -11,6 +11,7 @@
 
 <?php
 //opdracht: 1
+
 $time = date("H");
 
 if ($time >= 6 && $time < 12) {
@@ -28,6 +29,7 @@ else {
 
 
 //opdracht: 2
+echo "<br>";
 
 //$time2 = date("H");
 $time2 = 5;
@@ -49,6 +51,7 @@ echo "<br>";
 
 
 //opdracht: 3
+echo "<br>";
 
 $number1 = 10;
 $number2 = 15;
@@ -68,6 +71,7 @@ else if ($number1 > $number2) {
 echo "<br>";
 
 //opdracht: 4
+echo "<br>";
 
 $price = 100;
 $int = 1.19;
@@ -93,6 +97,7 @@ else if ($price >= 55 && $price < 150) {
 echo "<br>";
 
 //opdracht: 5
+echo "<br>";
 
 $number5 = 13;
 
@@ -106,6 +111,7 @@ else {
 echo "<br>";
 
 //opdracht: 6
+echo "<br>";
 
 $time6 = date("H:i");
 //$time6 = "17:00";
@@ -123,6 +129,7 @@ else if ($time6 >= "08:00") {
 echo "<br>";
 
 //opdracht: 7
+echo "<br>";
 
 $priceIphone = 1000;
 $spaargeld = 1004;
@@ -150,26 +157,158 @@ else {
 echo "<br>";
 
 //opdracht: 8
+echo "<br>";
 
 $voteAge = 18;
 $votePass = false;
 $licenceAge = 16;
-$age8 = 17;
+$age8 = 25;
 
-if ($age8 >= $licenceAge && $age8 >= $voteAge && $votePass = true) {
-    echo "je mag examen doen voor de scooter rijbewijs en je mag stemmen";
+if ($age8 >= $licenceAge && $age8 >= $voteAge && $votePass === true) {
+    echo "je mag examen doen voor de scooter rijbewijs!";
+    echo "<br>";
+    echo "je mag stemmen!";
+    echo "<br>";
+    echo "Uw leeftijd is: $age8";
 }
-elseif ($age8 >= $licenceAge && $age8 >= $voteAge && $votePass = false) {
-    echo "Je kunt wel voor je scooter rijbewijs gaan maar je mist nog een stem pas.";
+elseif ($age8 >= $licenceAge && $age8 >= $voteAge && $votePass === false) {
+    echo "Je mag examen doen voor de scooter rijbewijs!";
+    echo "<br>";
+    echo "je mag NIET stemmen! je mist een stem pas";
+    echo "<br>";
+    echo "Uw leeftijd is: $age8";
 }
-else if ($age8 < $licenceAge && $age8 < $voteAge) {
-    echo "Je bent te jong om voor je scooterrijbewijs te gaan en om te stemmen";
+elseif ($age8 >= $licenceAge && $age8 < $voteAge) {
+    echo "Je mag examen doen voor de scooter rijbewijs!";
+    echo "<br>";
+    echo "je mag NIET stemmen! je bent nog te jong om te stemmen.";
+    echo "<br>";
+    echo "Uw leeftijd is: $age8";
+}
+else {
+    echo "Je bent te jong om examen te doen voor de scooterrijbewijs";
+    echo "<br>";
+    echo "Je bent te jong om te stemmen.";
+    echo "<br>";
+    echo "Uw leeftijd is: $age8";
+}
+echo "<br>";
+
+//opdracht: 9
+echo "<br>";
+
+$side1 = 2;
+$side2 = 2;
+$side3 = 1;
+
+echo "Zijde 1: $side1 cm";
+echo "<br>";
+echo "Zijde 2: $side2 cm";
+echo "<br>";
+echo "Zijde 3: $side3 cm";
+echo "<br>";
+
+if ($side1 && $side2 > $side3) {
+    echo "Kan wel!";
+}
+else {
+    echo "Kan niet!";
 }
 
+echo "<br>";
 
+//opdracht: 10
+echo "<br>";
 
+$start = 1;
+$end = 12;
+$sum = 0;
 
+echo "Waarde van getal is: $end";
+echo "<br>";
 
+for ($i = 0; $i <= $end; $i++) {
+    $sum += $i;
+    if($i != $end)
+    {
+        echo $i.' + ';
+    }
+    else
+    {
+        echo $i;
+    }
+}
+
+echo '= '.$sum;
+echo "<br>";
+
+//opdracht: 11
+echo "<br>";
+
+$start11 = 1;
+$end11 = 5;
+$sum11 = 1;
+
+echo "Waarde van getal is: $end11";
+echo "<br>";
+
+for ($i = 1; $i <= $end11; $i++) {
+    $sum11 *= $i;
+    if($i != $end11)
+    {
+        echo $i.' x ';
+    }
+    else
+    {
+        echo $i;
+    }
+}
+
+echo '= '.$sum11;
+echo "<br>";
+
+//opdracht: 13
+echo "<br>";
+
+$km_stand = 0;
+$km_add = 1609;
+
+echo '<table>';
+echo '<tr> <th>Miles</th> <th>Kilometers</th> </tr>';
+
+for ($row=1;$row<=10;$row++) {
+    echo '<tr>';
+    $km_stand += $km_add;
+    for ($col=1;$col<=1;$col++) {
+        echo '<td>'.$row.'</td>';
+        echo '<td>'.$km_stand.'</td>';
+    }
+    echo '</tr>';
+}
+echo '</table>';
+echo "<br>";
+
+//opdracht: 15 patroon 1
+echo "<br>";
+
+for ($x = 1; $x <= 6; $x++) {
+
+    if ($x != 6) {
+        echo $x. " ";
+    }
+    else {
+        echo $x;
+    }
+}
+
+echo "<br>";
+
+$numbers = "";
+for($i = 1; $i <= 6; $i++){
+    $numbers .= $i . " ";
+    echo $numbers . "<br>";
+
+}
 
 
 
