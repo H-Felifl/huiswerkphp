@@ -4,7 +4,12 @@
 
 //Hoofdstuk 6 opdracht 1 t/m 7
 
+echo "<h3>Hoofdstuk 6 opdracht 1 t/m 7</h3>";
+echo "<br>";
+
 //opdracht: 1
+echo "Opdracht: 1";
+echo "<br>";
 
 session_start(); //start session
 
@@ -16,6 +21,10 @@ if(isset($_SESSION['visit'])){
 }
 
 //opdracht: 2
+echo "<br>";
+echo "<br>";
+
+echo "Opdracht: 2";
 
 
 if (isset($_COOKIE['visit_count'])) {
@@ -27,14 +36,14 @@ if (isset($_COOKIE['visit_count'])) {
 setcookie('visit_count', $visit_count, time() + 3600);
 
 echo "<br>";
-echo "<br>";
 echo "In totaal heb je deze pagina al: $visit_count keer bekeken.";
 
 
 // opdracht: 3
 echo "<br>";
 echo "<br>";
-
+echo "Opdracht: 3";
+echo "<br>";
 
 function makePostcode() {
 
@@ -54,6 +63,9 @@ echo $givePostcode;
 //opdracht: 4
 echo "<br>";
 echo "<br>";
+echo "Opdracht: 4";
+echo "<br>";
+
 
 function solveOmtrek($P, $r) {
 
@@ -82,6 +94,9 @@ echo "De oppervlakte van een cirkel met straal 5 is: " . solveOpp(3.14159, 5);
 //opdracht: 5
 echo "<br>";
 echo "<br>";
+echo "Opdracht: 5";
+echo "<br>";
+
 
 
 function solveSpeed($s, $a) {
@@ -100,6 +115,76 @@ echo "Snelheid van een auto met remspoor van 50 meter is: " . solveSpeed(50, 5.5
 //opdracht: 6
 echo "<br>";
 echo "<br>";
+echo "Opdracht: 6";
+echo "<br>";
+
+
+function convertCurrency($dollars, $exchangeRate = 0.94) {
+    return $dollars * $exchangeRate;
+}
+$dollars = 86.74;
+$euros = convertCurrency($dollars);
+echo "$" . number_format($dollars, 2) . " is gelijk aan " . "€" . number_format($euros, 2) . ".";
+
+
+//opdracht: 7
+echo "<br>";
+echo "<br>";
+echo "Opdracht: 7";
+echo "<br>";
+
+
+function derdeMacht1() {
+    $getal = 5;
+    $sum = $getal * $getal * $getal;
+    return $sum;
+}
+echo derdeMacht1();
+
+echo "<br>";
+
+function derdeMacht2($g) {
+    return $g * $g * $g;
+}
+
+echo derdeMacht2(10);
+
+echo "<br>";
+
+function derdeMacht3($g) {
+
+    for ($i = 0; $i <= 25; $i++) {
+
+        $g = $i;
+
+        $sum = $g * $g * $g;
+        echo $i . " x " . $i . " x " . $i . " = " . $sum . "<br>";
+
+    }
+
+    return $sum;
+
+
+}
+
+derdeMacht3(0);
+
+
+
+
+
+echo "<br>";
+echo "<br>";
+echo "<h3>Hoofdstuk 7 opdracht 1 t/m 4</h3>";
+echo "<br>";
+echo "<br>";
+
+//opdracht: 1
+echo "Opdracht: 1";
+echo "<br>";
+echo "<br>";
+
+
 
 
 
