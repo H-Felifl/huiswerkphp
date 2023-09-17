@@ -184,10 +184,9 @@ echo "Opdracht: 1";
 echo "<br>";
 echo "<br>";
 
-
-
-
-
+if (isset($_post['uitrekenen'])) {
+    echo "the blodclart thing is verzonden innit!";
+}
 
 
 
@@ -206,6 +205,33 @@ echo "<br>";
     <title>Document</title>
 </head>
 <body>
+
+
+
+<form method="post" action="">
+
+<label for="bedrag">Bedrag exclusief BTW &nbsp </label>
+<input type="text" name="bedrag" id="bedrag">
+
+<br>
+
+<input type="radio" name="laag" id="laag">
+<label for="laag">laag, 9%</label>
+
+<br>
+
+<input type="radio" name="hoog" id="hoog">
+<label for="hoog">hoog, 21%</label>
+
+<br>
+<br>
+
+<input type="submit" name="uitreken" value="uitrekenen">
+
+
+</form>
+
+
 
 
 
