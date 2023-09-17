@@ -184,9 +184,17 @@ echo "Opdracht: 1";
 echo "<br>";
 echo "<br>";
 
-if (isset($_post['uitrekenen'])) {
-    echo "the blodclart thing is verzonden innit!";
+if (isset($_POST['uitreken'])) {
+    
+    $input = $_POST['uitreken'];
+
+    echo $input;
+    echo "<br><br>";
+
+}else {
+    $input = "";
 }
+
 
 
 
@@ -226,10 +234,30 @@ if (isset($_post['uitrekenen'])) {
 <br>
 <br>
 
-<input type="submit" name="uitreken" value="uitrekenen">
+<input type="submit" name="uitreken" value="uitreken">
 
 
 </form>
+
+<!-- <h3>Btw berekenen</h3> -->
+
+<!-- <form method="post" action="">
+
+<label for="">Bedrag exclusief BTW</label>
+<input type="text" name="income" id="">
+<br><br>
+<input type="submit" value="verzenden">
+
+
+</form> -->
+
+
+<!-- <?php 
+
+if (isset($_post))
+
+
+?> -->
 
 
 
