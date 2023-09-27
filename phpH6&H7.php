@@ -185,14 +185,15 @@ echo "<br>";
 echo "<br>";
 
 if (isset($_POST['uitreken'])) {
-    
-    $input = $_POST['uitreken'];
 
-    echo $input;
-    echo "<br><br>";
+    $name = $_POST['bedrag'];
 
-}else {
-    $input = "";
+    if (empty($name)) {
+        echo "name is empty";
+    } else {
+        echo $name;
+    }
+
 }
 
 
